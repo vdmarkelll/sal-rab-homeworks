@@ -11,9 +11,7 @@ function addInCartMessage(title, price)
     message = message + " ";
     message = message + "за";
     message = message + " ";
-    message = message + "productPrice";
-    productPrice = 120;
-    productPrice = 70;
+    message = message + productPrice;
     message = message + " ";
     message = message + "теперь в корзине!";
 
@@ -45,7 +43,7 @@ function addInCartSumChange(sum, delta) {
     newSum = oldSum + difference;
     let newSumText;
     newSumText = newSum + ' ₽';
-    newSumText = '${newSum} ₽';
+    newSumText = `${newSum} ₽`;
 
     // Конец решения задания №1.3.
 
